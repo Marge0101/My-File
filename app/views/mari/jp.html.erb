@@ -1,217 +1,237 @@
 <!DOCTYPE html>
 <html>
-<title>My portfolio</title>
-
-<body>
-
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:30%">
-  <div class="bgimg"></div>
-</nav>
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-teal">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-teal">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-teal">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#work" class="w3-button w3-block w3-teal">WORK</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#education" class="w3-button w3-block w3-teal">EDUCATION</a>
+    </div>
   </div>
-</nav>
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:30%">
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:0px 0px" id="home">
-    <h1 class="w3-jumbo"><b>Mari Sato</b></h1>
-    <!--%= link_to "About", '#' ,class:"w3-button w3-small w3-white w3-border w3-border-grey w3-round" %-->
-    <a href="#about" class="w3-button w3-small w3-white w3-border w3-border-grey w3-round" >About</a>
-    <a href="#contact"class="w3-button w3-small w3-white w3-border w3-border-grey w3-round">Contact</a>
-    <%= link_to "Help", '#' ,class:"w3-button w3-small w3-white w3-border w3-border-grey w3-round" %>
-
-    <p>Photographer and Web Designer.</p>
-    <button class="w3-button w3-light-grey w3-padding-middle w3-margin-top">
-      <i class="fa fa-download"></i> Download Resume
-    </button></br>
-    <div class="change">
-     <%= link_to "English", mari_en_path ,class:"w3-button w3-small w3-white w3-border w3-border-grey w3-round" %>
-    </div>
-    
-  </header>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0px 16px">
-      <div>
-        <button class="w3-button w3-hover-red w3-padding-large w3-dark-grey w3-xxlarge">Sample1</button>
-        <button class="w3-button w3-hover-blue w3-padding-large w3-dark-grey w3-xxlarge">Sample2</button>
-        <button class="w3-button w3-hover-yellow w3-padding-large w3-dark-grey w3-xxlarge">Sample3</button>
-      </div>
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-12" id="about">
-    <h2  id="about">About</h2>
-    <hr class="w3-opacity">
-    <p>日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、日本語テキスト、 ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-    </div><br>
-
-    <div class="w3-row w3-center w3-padding-0 w3-section">
-      <div class="w3-quarter w3-section">
-      <div class="w3-panel w3-padding-middle w3-black w3-xxlarge">
-        Sample1<br>
-        Sample1
-        </div>
-      </div>
-      
-      <div class="w3-quarter w3-section">
-      <button class="w3-button w3-hover-red w3-padding-middle w3-dark-grey w3-xxlarge">Sample1</button>
-      </div>
-      
-      <div class="w3-quarter w3-section">
-      <button class="w3-button w3-hover-red w3-padding-large w3-dark-grey w3-xxlarge">Sample1</button>
-      </div>
-      
-      <div class="w3-quarter w3-section">
-      <button class="w3-button w3-hover-red w3-padding-large w3-dark-grey w3-xxlarge">Sample1</button>
-      </div>
-      
-    </div>
-    
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Projects Done
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        Happy Clients
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
-      </div>
-    </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24">Work Experience</h3>
-    
-     <div class="w3-white w3-margin-bottom">
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web ディレクター/ 電通テック（クリーク＆リバー社より出向）</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>3PP オンラインストアSKU Manager  / DELL（クリーク＆リバー社より出向）</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-      </div>
-    
-     <h3 class="w3-padding-24">Education</h3>
-    
-     <div class="w3-white">
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
-        </div>
-      </div>
-  <!-- End About Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-16 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2 id="contact">Contact Me</h2>
-    <hr class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div>
-
-
-    <p>Lets get in touch. Send me a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>  
-  
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-  
-<!-- END PAGE CONTENT -->
 </div>
+ 
+  
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+    <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#work" class="w3-bar-item w3-button" onclick="toggleFunction()"> Work Experience</a>
+    <a href="#education" class="w3-bar-item w3-button" onclick="toggleFunction()">EDUCATION</a>
+  </div>
+</div>
+<!-- Page Container -->
+<div class="w3-content " style="max-width:1400px; margin-top:60px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/images/sample3-2.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Mari Sato</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <%= link_to "Go to English page", mari_en_path ,class: "w3-button w3-block w3-yellow w3-round w3-margin-top" %>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Web Developer/Project Assistant Manager</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>埼玉県, 深谷市</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Marge0101.MS@gmail.com</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-desktop fa-fw w3-margin-right w3-text-teal"></i> PC Skills</b></p>
+          <p>Excel （Sum、Vlookup、ピボッド):製品データ管理など</p>
+          <p>Word:書類作成</p>
+          <p>Power point:会議資料作成</p>
+          <br>
+          
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programing Skills</b></p>
+          <p>言語：Ruby、HTML5、CSS3</p>
+          <p>開発環境：Cloud9、Heroku、git/GitHub</p>
+          <p>データベース：MySQL</p>
+          <p>フレームワーク：Rails、Bootstrap</p>
+          <br>
+          
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>日本語：ネイティブ</p>
+          <p>English：TOEIC 625</p>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"id="about"><i class="fa fa-user-circle fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About me</h2>
+    
+        <div class="w3-container">
+          IT・Web業界歴6年 ECサイト運営、オペレーションからWeb ディレクションまでをこなせるようになる。
+          アジア諸国のチームとリモートで業務を進めていく中で、
+          
+          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        </div>
+        <!-- The portfolio -->
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-diamond fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Portforlio</h2>
+        <div class="w3-row-padding ">
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <a href='https://scuba-talk-app.herokuapp.com/' target="_blank">
+              <img src="/images/scuba.jpg" alt="John" style="width:100%">
+              <div class="w3-container">
+                <h3>Scuba App</h3>
+              </a>
+                <p class="w3-opacity">Twitterクローンアプリ</p>
+                <p>制作期間 : 2週間</p>
+                <p>昨年ライセンスを取得。</br>
+                ダイバーとの交流の場ができればと思い作成
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <a href='https://book-item.herokuapp.com/' target="_blank">
+              <img src="/images/book-item.jpg" alt="Jane" style="width:100%">
+              <div class="w3-container">
+                <h3>Book-Item</h3>
+              </a>
+                <p class="w3-opacity">楽天APIを使用したアプリ</p>
+                <p>制作期間 : 2週間</p>
+                <p>楽天書籍検索APIを使用し作成</br>
+                書籍総合ではなく、和書専用。</br>
+                </br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"id="work"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal" ></i>職歴 Work Experience</h2>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016年 8月 - 2017年 6月</h6>
+          <h5 class="w3-opacity"><b>株式会社 電通テック（契約社員：株式会社クリークアンドリバー社より出向）</b></h5>
+           <h6>職種: WEBディレクター</h6>
+           <p>事業内容:セールスプロモーション、インターネット、その他全ての広告及びパブリックリレーションズ業務資本金：26億5,000万円 従業員数：1,134名</p>
+           <p>業務内容:P&G製品、明治製品、銀座カラー、外務省のWEBページ、ライザップLINEニュース配信進行管理</p>
+        </div>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011年 9月 - 2016年 7月</h6>
+          <h5 class="w3-opacity"><b>DELL株式会社（契約社員：株式会社クリークアンドリバー社より出向）</b></h5>
+          <h6>職種：ソフトウエア＆周辺機器SKUマネージャー</h6>
+          <p>事業内容：PC、周辺機器製造、販売 資本金：3億500円 従業員数： 約1,800名</p>
+          <h6>【概要】クライアント・ソリューションズ統括本部クライアント製品マーケティング本部所属。</h6>
+          3PP製品（DELL以外の他社製品）販売戦略を行う部署（２人）において、海外拠点（APJ/日本,アジア太平洋地域)とのやり取りを中心に各種調整を１人で担当。（日々の英語使用割合：日本語50％英語50％）</br>
+          自社で販売活動ができるように登録をするところ（SKU登録:トータル15000個程度）から、価格考察、その後、営業（40人）が営業活動できるよう運営。</br>
+          その製品がオンライン販売の場合は、ECストアへ製品をアップしオンラインストアも併せて運営。
+          その他、トラブルシューティングを含むすべての業務を一貫してセールスオペレーションを担当。</br>
+          他社製品を取り扱う商社,DELL自社営業、関連海外チームを繋ぎ、業務円滑に務める。</br>
+          （担当国5ヶ国:インド、中国、マレーシア、アメリカ、ドイツ/英語使用頻度：チャット80％、電話20％）
+          </p>
+          <h6>【成果: 国内業務運営円滑化】</h6>
+          <p>海外本社からの運営仕様と日本の運営スタイルが異なり頻繁に衝突があり、業務の妨げになる事が多かった。</br>
+          施策：衝突の度に、関係者、関連部署と国内の営業活動がスムーズに行えるよう交渉。</br>
+          結果：国内外関係者を繋げるコミュニケーション力、SKU（商品コード）の管理、ECサイト運営能力が認められ、</br>
+          全ての3PP商品（サードパーティー製品：他社商品）の一貫した運営業務を任される。</br>
+          新システム導入時、社員を介さず、日本で取り扱う全3PP製品SKUの移行作業を1人で成し遂げる。
+          </p>
+          
+        </div>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2008年 4月 - 2009年 10月</h6>
+          <h5 class="w3-opacity"><b>株式会社ヒューマントラスト（正社員）</b></h5>
+          <p>職種：ワークス営業部 日雇派遣管理営業</p>
+          <p>事業内容：総合人材サービス業　 資本金：9900万円　　従業員数： 約570名　売上高：212億円</p>
+                    
+          <p>【業務内容】
+          日雇部門始動以来、初の女性社員として配属。クライアントのニーズに応じて、人材の手配から業務改善の企画提案、研修企画立案。スタッフカウンセリングを行う。</p>
+          
+          <p>【担当業務】
+          大口顧客２社担当（当時、大口主力顧客３社あるうちの２社を担当）</p>
+          <p>◆担当１：株式会社オンワード樫山（アパレルメーカー）／スタッフ管理、提案営業 【実績 単月1200～1500万程】</br>
+          クライアントとスタッフのヒアリング、カウンセリングを重ね、欠勤減少、
+          スタッフスキルアップに成功。
+          </p>
+          <p> ◆担当２：株式会社ショウワンスポーツ（アパレルメーカー）／イベントフロアリーダー 【実績 単月1000～1200万程】</br>
+          シーシェルピンクフェスタ（１カ月に及ぶ会員限定男子禁制、日本最大級水着セールイベント）のイベント運営。</br>
+          ・イベント準備～終了までのスケジュール管理、及び研修立案、実施（レジ、水着の在庫管理、販売など）</br>
+          クレーム、万引きがなくなり、翌年の継続受注につなげる。
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"id="education"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>学歴 Education</h2>
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006 - 2008</h6>
+          <h5 class="w3-opacity"><b>日本大学 商学部 商業学科 : 商学学士号取得</b></h5>
+          <hr>
+        </div>
+        
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004 - 2006</h6>
+          <h5 class="w3-opacity"><b>亜細亜大学 短期大学部 経営学科 : 経営学準学士号取得</b></h5>
+          <hr>
+        </div>
+        
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2002 - 2002</h6>
+          <h5 class="w3-opacity"><b>南オーストラリア Woodville Public High School（留学）</b></h5>
+          <hr>
+        </div>
+        
+        <div class="w3-container">
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1999 - 2002</h6>
+          <h5 class="w3-opacity"><b>埼玉県 私立 本庄第一高校　普通科 国際コース</b></h5>
+          <hr>
+        </div>
+      </div>
+      
+      
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  
+  <p>Created by Mari Sato </p>
+  <p><i class="fa fa-envelope fa-fw"></i>Marge0101.MS@gmail.com</p>
+</footer>
+
+</body>
+</html>
